@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+android:versionCode="8"
+android:versionName="8.0" >
+<permission>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+<uses-permission android:name="android.permission.BLUETOOTH" />
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+</permission>
+<application
+android:allowBackup="true"
+android:icon="@drawable/ic_launcher"
+android:label="@string/app_name"
+android:theme="@style/AppTheme" >
+<activity
+android:name="..."
+android:label="@string/app_name" >
+<intent-filter>
+<action android:name="android.intent.action.MAIN" />
+<category android:name="android.intent.category.LAUNCHER" />
+</intent-filter>
+</activity>
+<receiver android:name="...">
+<intent-filter>
+<action android:name="..." />
+</intent-filter>
+</receiver>
+<provider
+android:name="..."
+android:authorities="..."/>
+<service android:name="..."/>
+</application>
+</manifest>
